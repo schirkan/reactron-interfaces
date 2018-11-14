@@ -1,5 +1,5 @@
 import { IObjectDefinition } from "./IObjectDefinition";
 
-export interface IComponentDefinition extends IObjectDefinition {
+export interface IReactronComponentDefinition extends IObjectDefinition {
     component: any;
 }

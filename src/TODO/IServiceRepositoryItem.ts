@@ -1,7 +1,7 @@
 import { IReactronService } from "../IReactronService";
-import { IServiceDefinition } from "../IServiceDefinition";
+import { IReactronServiceDefinition } from "../IReactronServiceDefinition";
 
-export interface IServiceRepositoryItem extends IServiceDefinition {
+export interface IServiceRepositoryItem extends IReactronServiceDefinition {
     moduleName: string;
     instance: IReactronService;
     state: 'starting' | 'running' | 'stopped' | 'error';

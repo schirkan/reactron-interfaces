@@ -1,6 +1,6 @@
 export * from './src/IBackendService';
 export * from './src/IBackendServiceConfig';
-export * from './src/IComponentDefinition';
+export * from './src/IReactronComponentDefinition';
 export * from './src/IElectronApp';
 export * from './src/IExpressApp';
 export * from './src/IModuleContext';
@@ -9,7 +9,7 @@ export * from './src/IPubSub';
 export * from './src/IReactronComponentProps';
 export * from './src/IReactronService';
 export * from './src/IReactronServiceContext';
-export * from './src/IServiceDefinition';
+export * from './src/IReactronServiceDefinition';
 export * from './src/ISettingsManager';
 export * from './src/ISystemSettings';
 export * from './src/IWebComponentOptions';
