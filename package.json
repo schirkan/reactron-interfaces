@@ -20,7 +20,8 @@
     "main": "index.ts",
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.8",
-        "@types/node": "^10.12.7"
+        "@types/node": "^10.12.7",
+        "@types/react": "^16.7.6"
     },
     "peerDependencies": {
         "electron": "^3.0.9"
