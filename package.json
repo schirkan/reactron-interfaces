@@ -17,7 +17,7 @@
     "bugs": {
         "url": "https://github.com/schirkan/reactron-interfaces/issues"
     },
-    "types": "index.d.ts",
+    "main": "index.ts",
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.8",
         "@types/node": "^10.12.7"
