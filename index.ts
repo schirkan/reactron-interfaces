@@ -5,6 +5,7 @@ export * from './src/IExpressApp';
 export * from './src/IModuleContext';
 export * from './src/IObjectDefinition';
 export * from './src/IPubSub';
+export * from './src/IReactronComponentContext';
 export * from './src/IReactronComponentDefinition';
 export * from './src/IReactronComponentProps';
 export * from './src/IReactronService';
