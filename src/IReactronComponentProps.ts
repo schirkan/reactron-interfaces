@@ -9,8 +9,7 @@ export interface IReactronComponentProps<TOptions = any> extends IModuleContext 
     options: TOptions;
     electron: Electron.AllElectron;
     topics: IPubSub;
-    moduleApiPath: string;
-    getService: (serviceName: string, moduleName: string | undefined) => Promise<any>;
+
     renderComponent: (props: Partial<IWebComponentOptions>) => any;
     renderLoading: (text?: string, iconSize?: SizeProp) => any;
 }

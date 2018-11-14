@@ -4,6 +4,7 @@ export interface IModuleContext {
     readonly backendService: IBackendService;
     readonly moduleStorage: ElectronStore;
     readonly moduleName: string;
+    readonly moduleApiPath: string;
 
     getService<TService = any>(serviceName: string, moduleName?: string): Promise<TService | undefined>;
 }
