@@ -6,5 +6,5 @@ export interface IModuleContext {
     readonly moduleName: string;
     readonly moduleApiPath: string;
 
-    getService<TService = any>(serviceName: string, moduleName?: string): Promise<TService | undefined>;
+    getService<TService = any>(serviceName: string, moduleName?: string): TService | undefined;
 }
