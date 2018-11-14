@@ -5,10 +5,11 @@ import * as Electron from 'electron';
 import { IModuleContext } from './IModuleContext';
 
 export interface IReactronComponentProps<TOptions = any> extends IModuleContext {
-    componentName: string;
-    options: TOptions;
-    electron: Electron.AllElectron;
-    topics: IPubSub;
+    readonly componentName: string;
+    readonly moduleApiPath: string;
+    readonly options: TOptions;
+    readonly electron: Electron.AllElectron;
+    readonly topics: IPubSub;
 
     renderComponent: (props: Partial<IWebComponentOptions>) => any;
     renderLoading: (text?: string, iconSize?: SizeProp) => any;
