@@ -1,6 +1,6 @@
 {
     "name": "@schirkan/reactron-interfaces",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "interfaces for reactron modules",
     "keywords": [
         "reactron"
@@ -17,7 +17,8 @@
     "bugs": {
         "url": "https://github.com/schirkan/reactron-interfaces/issues"
     },
-    "main": "index.ts",
+    "main": "index.js",
+    "types": "index.d.ts",
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.8",
         "@types/node": "^10.12.7",
