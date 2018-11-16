@@ -1,4 +1,6 @@
+import * as electron from 'electron';
+
 export interface IElectronApp {
-    mainWindow: Electron.BrowserWindow;
+    mainWindow: electron.BrowserWindow;
     start(): Promise<void>;
 }

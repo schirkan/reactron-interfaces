@@ -1,5 +1,5 @@
-import { IReactronService } from "../IReactronService";
-import { IReactronServiceDefinition } from "../IReactronServiceDefinition";
+import { IReactronService } from "./IReactronService";
+import { IReactronServiceDefinition } from "./IReactronServiceDefinition";
 
 export interface IServiceRepositoryItem extends IReactronServiceDefinition {
     moduleName: string;
