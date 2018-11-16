@@ -4,6 +4,9 @@ import { IBackendServiceConfig } from './IBackendServiceConfig';
 import { IExpressApp } from './IExpressApp';
 import { IElectronApp } from './IElectronApp';
 import { ISettingsManager } from './ISettingsManager';
+import { IServiceManager } from './IServiceManager';
+import { IWebPageManager } from './IWebPageManager';
+import { IWebComponentsManager } from './IWebComponentsManager';
 
 export interface IBackendService {
     readonly config: IBackendServiceConfig;
@@ -14,14 +17,13 @@ export interface IBackendService {
     readonly electronApp: IElectronApp;
     readonly expressApp: IExpressApp;
     // readonly moduleLoader: IModuleLoader;
-    // readonly serviceManager: IServiceManager;
-    // readonly moduleManager: IModuleManager;
-    // readonly webPageManager: IWebPageManager;
-    // readonly webComponentsManager: IWebComponentsManager;
+    readonly serviceManager: IServiceManager;
+    //readonly moduleManager: IModuleManager;
+    readonly webPageManager: IWebPageManager;
+    readonly webComponentsManager: IWebComponentsManager;
     readonly settings: ISettingsManager;
 
     exit(): void;
     restart(): void;
     reset(): Promise<void>;
 }
-

@@ -8,6 +8,6 @@ export interface ICommandResult {
     children: ICommandResult[];
 }
 
-export interface ICommandResultWithData<TData> extends ICommandResult {
+export interface ICommandResultWithData<TData = any> extends ICommandResult {
     data: TData;
 }

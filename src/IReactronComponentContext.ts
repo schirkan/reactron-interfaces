@@ -8,6 +8,7 @@ export interface IReactronComponentContext extends IModuleContext {
     readonly moduleApiPath: string;
     readonly electron: Electron.AllElectron;
     readonly topics: IPubSub;
+    
     renderComponent: (props: Partial<IWebComponentOptions>) => any;
     renderLoading: (text?: string, iconSize?: SizeProp) => any;
 }
