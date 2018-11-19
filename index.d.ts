@@ -4,7 +4,7 @@ export * from './src/ICommandResult';
 export * from './src/IComponentLoader';
 export * from './src/IElectronApp';
 export * from './src/IExpressApp';
-export * from './src/IInputComponent';
+export * from './src/IInputComponentProps';
 export * from './src/IModuleContext';
 export * from './src/IModuleRepository';
 export * from './src/IModuleRepositoryItem';
