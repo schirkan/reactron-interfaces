@@ -5,17 +5,17 @@ export interface IOptionDefinitionValue {
     text: string;
 }
 
-export interface IFieldDefinition {
-    name: string;
-    displayName: string;
-    description?: string;
+export interface IFieldDefinition extends IObjectDefinition {
+    // name: string;
+    // displayName: string;
+    // description?: string;
     valueType: IOptionDefinitionValueType;
     defaultValue?: any;
     minValue?: number;
     maxValue?: number;
     stepSize?: number;
     values?: IOptionDefinitionValue[];
-    fields?: IFieldDefinition[];
+    // fields?: IFieldDefinition[];
     isArray?: boolean;
     textRows?: number;
 }
@@ -25,4 +25,6 @@ export interface IObjectDefinition {
     displayName: string;
     description?: string;
     fields?: IFieldDefinition[];
+    inputControl?: string; // Name of input component 'moduleName.componentName'
+    inputForm?: string; // Name of input component 'moduleName.componentName'
 }

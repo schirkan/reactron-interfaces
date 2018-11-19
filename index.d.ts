@@ -3,6 +3,7 @@ export * from './src/IBackendServiceConfig';
 export * from './src/ICommandResult';
 export * from './src/IElectronApp';
 export * from './src/IExpressApp';
+export * from './src/IInputComponent';
 export * from './src/IModuleContext';
 export * from './src/IModuleRepositoryItem';
 export * from './src/IObjectDefinition';
