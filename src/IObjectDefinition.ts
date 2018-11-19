@@ -25,6 +25,6 @@ export interface IObjectDefinition {
     displayName: string;
     description?: string;
     fields?: IFieldDefinition[];
-    inputControl?: string; // Name of input component 'moduleName.componentName'
-    inputForm?: string; // Name of input component 'moduleName.componentName'
+    inputControl?: { module: string, component: string };
+    inputForm?: { module: string, component: string };
 }
