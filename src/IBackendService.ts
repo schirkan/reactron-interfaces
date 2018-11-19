@@ -7,13 +7,15 @@ import { ISettingsManager } from './ISettingsManager';
 import { IServiceManager } from './IServiceManager';
 import { IWebPageManager } from './IWebPageManager';
 import { IWebComponentsManager } from './IWebComponentsManager';
+import { IModuleRepository } from './IModuleRepository';
+import { IServiceRepository } from './IServiceRepository';
 
 export interface IBackendService {
     readonly config: IBackendServiceConfig;
     readonly topics: IPubSub;
-    // readonly moduleRepository: IModuleRepository;
-    // readonly serviceRepository: IServiceRepository;
-    // readonly serviceOptionsRepository: IServiceOptionsRepository;
+    readonly moduleRepository: IModuleRepository;
+    readonly serviceRepository: IServiceRepository;
+    //readonly serviceOptionsRepository: IServiceOptionsRepository;
     readonly electronApp: IElectronApp;
     readonly expressApp: IExpressApp;
     // readonly moduleLoader: IModuleLoader;
