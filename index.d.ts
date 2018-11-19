@@ -15,6 +15,7 @@ export * from './src/IReactronComponentDefinition';
 export * from './src/IReactronService';
 export * from './src/IReactronServiceContext';
 export * from './src/IReactronServiceDefinition';
+export * from './src/IServerInfo';
 export * from './src/IServiceManager';
 export * from './src/IServiceRepository';
 export * from './src/IServiceRepositoryItem';
