@@ -6,18 +6,16 @@ export interface IOptionDefinitionValue {
 }
 
 export interface IFieldDefinition extends IObjectDefinition {
-    // name: string;
-    // displayName: string;
-    // description?: string;
     valueType: IOptionDefinitionValueType;
     defaultValue?: any;
     minValue?: number;
     maxValue?: number;
     stepSize?: number;
     values?: IOptionDefinitionValue[];
-    // fields?: IFieldDefinition[];
     isArray?: boolean;
     textRows?: number;
+    inputControl?: { module: string, component: string };
+    inputForm?: { module: string, component: string };
 }
 
 export interface IObjectDefinition {
@@ -25,6 +23,4 @@ export interface IObjectDefinition {
     displayName: string;
     description?: string;
     fields?: IFieldDefinition[];
-    inputControl?: { module: string, component: string };
-    inputForm?: { module: string, component: string };
 }
