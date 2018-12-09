@@ -1,4 +1,8 @@
+import { IInputComponentProps } from "./IInputComponentProps";
+
 type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent';
+
+type IInput = { module: string, component: string } | ((props: IInputComponentProps) => any) | (new (props: IInputComponentProps) => any);
 
 export interface IOptionDefinitionValue {
     value: any;
@@ -14,8 +18,8 @@ export interface IFieldDefinition extends IObjectDefinition {
     values?: IOptionDefinitionValue[];
     isArray?: boolean;
     textRows?: number;
-    inputControl?: { module: string, component: string };
-    inputForm?: { module: string, component: string };
+    inputControl?: IInput;
+    inputForm?: IInput;
 }
 
 export interface IObjectDefinition {
