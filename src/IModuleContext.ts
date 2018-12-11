@@ -7,5 +7,5 @@ export interface IModuleContext {
     readonly moduleName: string;
 
     getService<TService = any>(serviceName: string, moduleName?: string): TService | undefined;
-    getSettings(): ISystemSettings;
+    getSettings(): Readonly<ISystemSettings>;
 }
