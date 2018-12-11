@@ -1,4 +1,5 @@
 import { IBackendService } from './IBackendService';
+import { ISystemSettings } from './ISystemSettings';
 
 export interface IModuleContext {
     readonly backendService: IBackendService;
@@ -6,4 +7,5 @@ export interface IModuleContext {
     readonly moduleName: string;
 
     getService<TService = any>(serviceName: string, moduleName?: string): TService | undefined;
+    getSettings(): ISystemSettings;
 }
