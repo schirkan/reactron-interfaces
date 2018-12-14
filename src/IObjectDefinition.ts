@@ -1,6 +1,6 @@
 import { IInputComponentProps } from "./IInputComponentProps";
 
-type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent';
+type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent' | 'password';
 
 type IInput = { module: string, component: string } | ((props: IInputComponentProps) => any) | (new (props: IInputComponentProps) => any);
 
