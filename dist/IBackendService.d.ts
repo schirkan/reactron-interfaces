@@ -8,6 +8,7 @@ import { IWebPageManager } from './IWebPageManager';
 import { IWebComponentsManager } from './IWebComponentsManager';
 import { IModuleRepository } from './IModuleRepository';
 import { IServiceRepository } from './IServiceRepository';
+import { ILogManager } from './ILogManager';
 export interface IBackendService {
     readonly config: IBackendServiceConfig;
     readonly topics: IPubSub;
@@ -17,6 +18,7 @@ export interface IBackendService {
     readonly expressApp: IExpressApp;
     readonly serviceManager: IServiceManager;
     readonly webPageManager: IWebPageManager;
+    readonly logManager: ILogManager;
     readonly webComponentsManager: IWebComponentsManager;
     readonly settings: ISettingsManager;
     exit(): void;

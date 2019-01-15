@@ -4,6 +4,7 @@ import { IWebComponentOptions } from './IWebComponentOptions';
 import { IModuleContext } from './IModuleContext';
 import * as electron from 'electron';
 import { IComponentLoader } from './IComponentLoader';
+import { ILogWriter } from "./ILogWriter";
 
 export interface IExtraWebComponentProps {
   className?: string;
@@ -16,6 +17,7 @@ export interface IReactronComponentContext extends IModuleContext {
   readonly electron: electron.AllElectron;
   readonly topics: IPubSub;
   readonly componentLoader: IComponentLoader;
+  readonly log: ILogWriter;
 
   renderComponent: (props: Partial<IWebComponentOptions> & IExtraWebComponentProps) => any;
   renderLoading: (text?: string, iconSize?: SizeProp) => any;

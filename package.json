@@ -1,6 +1,6 @@
 {
   "name": "@schirkan/reactron-interfaces",
-  "version": "0.10.0-alpha.1",
+  "version": "0.10.0-alpha.3",
   "description": "interfaces for reactron modules",
   "keywords": [
     "reactron"
@@ -20,8 +20,8 @@
   "scripts": {
     "build": "tsc -p ."
   },
-  "main": "dist/bundle.js",
-  "types": "dist/bundle.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
     "@types/electron": "^1.6.10",
