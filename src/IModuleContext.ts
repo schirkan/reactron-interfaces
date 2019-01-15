@@ -1,5 +1,6 @@
 import { IBackendService } from './IBackendService';
 import { ISystemSettings } from './ISystemSettings';
+import { ElectronStore } from './ElectronStore';
 
 export interface IModuleContext {
     readonly backendService: IBackendService;
