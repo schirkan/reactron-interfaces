@@ -1,7 +1,7 @@
 import { IFieldDefinition } from "./IObjectDefinition";
-export interface IInputComponentProps {
+export interface IInputComponentProps<TValue = any> {
     definition: IFieldDefinition;
     uniqueId: string;
-    value: any;
-    valueChange: (definition: IFieldDefinition, newValue: any) => void;
+    value: TValue;
+    valueChange: (definition: IFieldDefinition, newValue: TValue) => void;
 }
