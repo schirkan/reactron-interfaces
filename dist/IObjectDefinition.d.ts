@@ -1,26 +1,26 @@
 import { IInputComponentProps } from "./IInputComponentProps";
 declare type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent' | 'password';
-declare type IInput = {
+declare type IInput<TValue> = {
     module: string;
     component: string;
-} | ((props: IInputComponentProps) => any) | (new (props: IInputComponentProps) => any);
-export interface IOptionDefinitionValue {
-    value: any;
+} | ((props: IInputComponentProps<TValue>) => any) | (new (props: IInputComponentProps<TValue>) => any);
+export interface IOptionDefinitionValue<TValue> {
+    value: TValue;
     text: string;
 }
-export interface IFieldDefinition extends IObjectDefinition {
+export interface IFieldDefinition<TValue = any> extends IObjectDefinition<TValue> {
     valueType: IOptionDefinitionValueType;
-    defaultValue?: any;
+    defaultValue?: TValue;
     minValue?: number;
     maxValue?: number;
     stepSize?: number;
-    values?: IOptionDefinitionValue[];
+    values?: IOptionDefinitionValue<TValue>[];
     isArray?: boolean;
     textRows?: number;
-    inputControl?: IInput;
-    inputForm?: IInput;
+    inputControl?: IInput<TValue>;
+    inputForm?: IInput<TValue>;
 }
-export interface IObjectDefinition {
+export interface IObjectDefinition<TValue> {
     name: string;
     displayName: string;
     description?: string;
