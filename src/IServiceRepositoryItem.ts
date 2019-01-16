@@ -7,5 +7,4 @@ export interface IServiceRepositoryItem extends IReactronServiceDefinition {
     instance: IReactronService;
     context: IReactronServiceContext;
     state: 'starting' | 'running' | 'stopped' | 'error';
-    log: string[];
 }
