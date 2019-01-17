@@ -1,6 +1,7 @@
 export declare const topicNames: {
-    systemSettingsUpdated: "system-settings-updated";
-    componentsUpdated: "components-updated";
-    pagesUpdated: "pages-updated";
-    refresh: "refresh";
+    systemSettingsUpdated: "reactron:system-settings-updated";
+    componentsUpdated: "reactron:components-updated";
+    pagesUpdated: "reactron:pages-updated";
+    refresh: "reactron:refresh";
+    log: "reactron:log";
 };
