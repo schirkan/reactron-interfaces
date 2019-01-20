@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // "outFile": "dist/bundle.js",
     "outDir": "dist",
     "target": "es6",
     "module": "CommonJS",
