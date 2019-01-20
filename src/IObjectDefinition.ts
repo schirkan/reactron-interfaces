@@ -1,13 +1,14 @@
 import { IInputComponentProps } from "./IInputComponentProps";
-
-type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent' | 'password';
-
-type IInput<TValue> = { module: string, component: string } | ((props: IInputComponentProps<TValue>) => any) | (new (props: IInputComponentProps<TValue>) => any);
+import { IReactronComponentContext } from "./IReactronComponentContext";
 
 export interface IOptionDefinitionValue<TValue> {
     value: TValue;
     text: string;
 }
+
+type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent' | 'password';
+type IInput<TValue> = { module: string, component: string } | ((props: IInputComponentProps<TValue>) => any) | (new (props: IInputComponentProps<TValue>) => any);
+type IValues<TValue> = IOptionDefinitionValue<TValue>[] | ((context: IReactronComponentContext) => Promise<IOptionDefinitionValue<TValue>[]>);
 
 export interface IFieldDefinition<TValue = any> extends IObjectDefinition<TValue> {
     valueType: IOptionDefinitionValueType;
@@ -15,7 +16,7 @@ export interface IFieldDefinition<TValue = any> extends IObjectDefinition<TValue
     minValue?: number;
     maxValue?: number;
     stepSize?: number;
-    values?: IOptionDefinitionValue<TValue>[];
+    values?: IValues<TValue>;
     isArray?: boolean;
     textRows?: number;
     inputControl?: IInput<TValue>;

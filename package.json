@@ -1,6 +1,6 @@
 {
     "name": "@schirkan/reactron-interfaces",
-    "version": "0.10.1",
+    "version": "0.10.2",
     "description": "interfaces for reactron modules",
     "keywords": [
         "reactron"
