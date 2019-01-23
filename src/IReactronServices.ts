@@ -12,5 +12,4 @@ export interface IReactronServices {
     readonly services: IServiceController;
     readonly components: IWebComponentController;
     readonly pages: IWebPageController;
-    getService<TService = any>(serviceName: string, moduleName?: string): Promise<TService | undefined>;
 }

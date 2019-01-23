@@ -9,4 +9,5 @@ export interface IModuleContext {
     readonly moduleName: string;
     readonly settings: Readonly<ISystemSettings>;
     readonly services: IReactronServices;
+    getService<TService = any>(serviceName: string, moduleName?: string): Promise<TService | undefined>;
 }
