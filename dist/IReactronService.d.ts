@@ -1,4 +1,4 @@
-import { IReactronServiceContext } from "./IReactronServiceContext";
+import { IReactronServiceContext } from './IReactronServiceContext';
 export interface IReactronService<TOptions = any> {
     start?(context: IReactronServiceContext): Promise<void>;
     stop?(): Promise<void>;

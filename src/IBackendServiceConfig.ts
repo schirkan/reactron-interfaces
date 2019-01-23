@@ -1,6 +1,6 @@
-import { ISystemSettings } from "./ISystemSettings";
-import { IWebComponentOptions } from "./IWebComponentOptions";
-import { IWebPageOptions } from "./IWebPageOptions";
+import { ISystemSettings } from './ISystemSettings';
+import { IWebComponentOptions } from './IWebComponentOptions';
+import { IWebPageOptions } from './IWebPageOptions';
 
 export interface IBackendServiceConfig {
     root: string;

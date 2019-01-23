@@ -1,4 +1,4 @@
-import { IModuleRepositoryItem } from "./IModuleRepositoryItem";
+import { IModuleRepositoryItem } from './IModuleRepositoryItem';
 export interface IModuleRepository {
     add(module: IModuleRepositoryItem): void;
     remove(moduleName: string): void;

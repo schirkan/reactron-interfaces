@@ -1,5 +1,5 @@
-import { IReactronService } from "./IReactronService";
-import { ICommandResult } from "./ICommandResult";
+import { IReactronService } from './IReactronService';
+import { ICommandResult } from './ICommandResult';
 
 export interface IServiceManager {
     getAsync(moduleName: string, serviceName: string): Promise<IReactronService | undefined>;

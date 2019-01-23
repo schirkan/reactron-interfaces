@@ -1,4 +1,4 @@
-import { IObjectDefinition } from "./IObjectDefinition";
+import { IObjectDefinition } from './IObjectDefinition';
 
 type ComponentType = 'content' | 'admin-input' | 'layout' | 'frame' | 'internal';
 

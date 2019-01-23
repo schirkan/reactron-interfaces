@@ -1,5 +1,5 @@
-import { IFieldDefinition } from "./IObjectDefinition";
-import { IReactronComponentContext } from "./IReactronComponentContext";
+import { IFieldDefinition } from './IObjectDefinition';
+import { IReactronComponentContext } from './IReactronComponentContext';
 export interface IInputComponentProps<TValue = any> {
     context: IReactronComponentContext;
     definition: IFieldDefinition;

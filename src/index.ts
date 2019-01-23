@@ -5,6 +5,7 @@ export * from './ICommandResult';
 export * from './IComponentLoader';
 export * from './IElectronApp';
 export * from './IExpressApp';
+export * from './IFrontendService';
 export * from './IInputComponentProps';
 export * from './ILogEntry';
 export * from './ILogManager';
@@ -30,3 +31,10 @@ export * from './IWebComponentsManager';
 export * from './IWebPageManager';
 export * from './IWebPageOptions';
 export * from './topicNames';
+
+export *  from './services/IModuleController';
+export *  from './services/IAppController';
+export *  from './services/ILogController';
+export *  from './services/IServiceController';
+export *  from './services/IWebComponentController';
+export *  from './services/IWebPageController';

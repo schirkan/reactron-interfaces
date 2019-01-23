@@ -1,6 +1,6 @@
-import { IReactronService } from "./IReactronService";
-import { IReactronServiceDefinition } from "./IReactronServiceDefinition";
-import { IReactronServiceContext } from "./IReactronServiceContext";
+import { IReactronService } from './IReactronService';
+import { IReactronServiceDefinition } from './IReactronServiceDefinition';
+import { IReactronServiceContext } from './IReactronServiceContext';
 export interface IServiceRepositoryItem extends IReactronServiceDefinition {
     moduleName: string;
     instance: IReactronService;

@@ -1,5 +1,5 @@
-import { IInputComponentProps } from "./IInputComponentProps";
-import { IReactronComponentContext } from "./IReactronComponentContext";
+import { IInputComponentProps } from './IInputComponentProps';
+import { IReactronComponentContext } from './IReactronComponentContext';
 export interface IOptionDefinitionValue<TValue> {
     value: TValue;
     text: string;
