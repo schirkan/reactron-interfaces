@@ -5,7 +5,7 @@ export * from './ICommandResult';
 export * from './IComponentLoader';
 export * from './IElectronApp';
 export * from './IExpressApp';
-export * from './IFrontendService';
+export * from './IReactronServices';
 export * from './IInputComponentProps';
 export * from './ILogEntry';
 export * from './ILogManager';
