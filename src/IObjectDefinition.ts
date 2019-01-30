@@ -7,7 +7,7 @@ export interface IOptionDefinitionValue<TValue> {
 }
 
 type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent' | 'password';
-type IInput<TValue> = { module: string, component: string } | ((props: IInputComponentProps<TValue>) => any) | (new (props: IInputComponentProps<TValue>) => any);
+export type IInput<TValue> = { module: string, component: string } | ((props: IInputComponentProps<TValue>) => any) | (new (props: IInputComponentProps<TValue>) => any);
 type IValues<TValue> = IOptionDefinitionValue<TValue>[] | ((context: IReactronComponentContext) => Promise<IOptionDefinitionValue<TValue>[]>);
 
 export interface IFieldDefinition<TValue = any> extends IObjectDefinition<TValue> {

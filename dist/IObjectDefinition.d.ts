@@ -5,7 +5,7 @@ export interface IOptionDefinitionValue<TValue> {
     text: string;
 }
 declare type IOptionDefinitionValueType = 'object' | 'number' | 'boolean' | 'string' | 'style' | 'webComponent' | 'password';
-declare type IInput<TValue> = {
+export declare type IInput<TValue> = {
     module: string;
     component: string;
 } | ((props: IInputComponentProps<TValue>) => any) | (new (props: IInputComponentProps<TValue>) => any);
