@@ -18,5 +18,5 @@ export interface IReactronComponentContext extends IModuleContext {
   readonly componentLoader: IComponentLoader;
 
   renderComponent: (props: Partial<IWebComponentOptions> & IExtraWebComponentProps) => any;
-  renderLoading: (text?: string, iconSize?: SizeProp) => any;
+  renderLoading: (text?: string, iconSize?: SizeProp, style?: React.CSSProperties) => any;
 }
