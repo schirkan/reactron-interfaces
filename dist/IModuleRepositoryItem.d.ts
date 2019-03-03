@@ -1,6 +1,6 @@
 export interface IModuleRepositoryItem {
     name: string;
-    folder: string;
+    displayName: string;
     path: string;
     description: string;
     version?: string;
