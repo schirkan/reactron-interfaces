@@ -8,10 +8,7 @@ export interface IModuleRepositoryItem {
     repository?: string;
     browserFile?: string;
     serverFile?: string;
-    isInstalled?: boolean;
-    isBuilded?: boolean;
     hasUpdate?: boolean;
-    canInstall?: boolean;
-    canBuild?: boolean;
+    updateVersion?: string;
     canRemove?: boolean;
 }
