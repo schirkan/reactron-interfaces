@@ -1,9 +1,10 @@
 {
     "name": "@schirkan/reactron-interfaces",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "description": "interfaces for reactron modules",
     "keywords": [
-        "reactron"
+        "reactron",
+        "interface"
     ],
     "author": {
         "name": "Martin Pietschmann",
@@ -26,8 +27,8 @@
         "@fortawesome/fontawesome-svg-core": "^1.2.17",
         "@types/electron": "^1.6.10",
         "@types/express": "^4.16.1",
-        "@types/node": "^11.13.9",
-        "@types/react": "^16.8.15",
+        "@types/node": "^12.0.0",
+        "@types/react": "^16.8.16",
         "typescript": "^3.4.5"
     }
 }
