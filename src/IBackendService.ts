@@ -1,4 +1,3 @@
-import { IBackendService } from './IBackendService';
 import { IPubSub } from './IPubSub';
 import { IBackendServiceConfig } from './IBackendServiceConfig';
 import { IExpressApp } from './IExpressApp';
